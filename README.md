@@ -14,7 +14,7 @@ Each version is self-contained. In Overleaf, set the main file to:
 - `resume-optimizer/resume.tex`
 - `resume-master/resume.tex`
 
-Use XeLaTeX because the Awesome-CV class depends on `fontspec` and bundled fonts.
+Use XeLaTeX because the Awesome-CV class depends on `fontspec` and bundled fonts. The root `.latexmkrc` forces XeLaTeX for Overleaf/GitHub sync projects.
 
 ## Notes
 
