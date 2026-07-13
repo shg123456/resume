@@ -10,7 +10,7 @@
 - chip design 细节：平台材料、波导宽度/层结构、grating coupler 设计目标、splitter/combiner 类型、fabrication foundry 或工艺约束、coupling loss / extinction / interference contrast 等测试结果。
 - software 证据：Python 自动化代码规模、控制了哪些仪器、是否有 reusable instrument classes、是否减少手动 sweep 时间、是否有数据 pipeline / fitting / regression notebook。
 - telecom 关键词：coherent detection、carrier recovery、optical injection locking、modulation transfer、EOM、sidebands、detuning tolerance、balanced photodetection、RF spectrum analysis、optical interconnects。
-- 论文状态：OPTICA under review 可以保留，但如果有 arXiv、preprint、DOI、conference talk、invited talk 链接，应补上。
+- 论文状态：APL under review 可以保留，但如果有 arXiv、preprint、DOI、conference talk、invited talk 链接，应补上。
 
 ## 简历修改建议
 
