@@ -64,6 +64,8 @@
 \RequirePackage{xifthen}
 % Needed to use a toolbox of programming tools
 \RequirePackage{etoolbox}
+% Needed to keep section headings and compact entries away from page footers
+\RequirePackage{needspace}
 % Needed to change line spacing in specific environment
 \RequirePackage{setspace}
 % Needed to manage fonts
@@ -377,6 +379,8 @@
 % Others
 \newcommand{\acvSectionTopSkip}{3mm}
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionNeedspace}{16\baselineskip}
+\newcommand{\acvEntryNeedspace}{5\baselineskip}
 
 
 %-------------------------------------------------------------------------------
@@ -529,6 +533,7 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
+  \Needspace{\acvSectionNeedspace}
   \vspace{\acvSectionTopSkip}
   \sectionstyle{#1}
   \phantomsection
@@ -564,6 +569,7 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
+  \Needspace{\acvEntryNeedspace}
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
