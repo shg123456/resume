@@ -1,0 +1,41 @@
+% !TEX program = xelatex
+\documentclass[10pt, a4paper]{awesome-cv}
+\usepackage{hyperref}
+\geometry{left=1.25cm, top=.65cm, right=1.25cm, bottom=1.35cm, footskip=.4cm}
+
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-red}
+
+\setbool{acvSectionColorHighlight}{false}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+\name{Shenghan}{Gao}
+\position{Photonic Integrated Circuits{\enskip\cdotp\enskip}Photonics Hardware{\enskip\cdotp\enskip}Validation \& Test}
+
+\mobile{(+1) 585-489-1187}
+\email{shg108@pitt.edu}
+\linkedin{sheng-han-gao}
+\github{gsh1994}
+
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter
+  {\today}
+  {Shenghan Gao~~~\textperiodcentered~~~Resume}
+  {\thepage}
+
+\input{resume/summary.tex}
+\input{resume/TechnicalSkills.tex}
+\input{resume/ResearchEducation.tex}
+\input{resume/experience.tex}
+\input{resume/publication.tex}
+
+\end{document}
