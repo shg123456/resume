@@ -21,17 +21,29 @@
 \renewcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{12pt}\bodyfont\bfseries\color{darktext} #1}}
 \renewcommand*{\skilltypestyle}[1]{{\fontsize{9pt}{11pt}\bodyfont\bfseries\color{darktext} #1}}
 \renewcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{11pt}\bodyfontlight\color{text} #1}}
-\renewenvironment{cvitems}{%
-  \vspace{-2.5mm}
-  \begin{justify}
-  \begin{itemize}[leftmargin=2ex,topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=2pt]
-    \setlength{\parskip}{0pt}
-    \renewcommand{\labelitemi}{\bullet}
-}{%
-  \end{itemize}
-  \end{justify}
-  \vspace{-2.5mm}
+\newlength{\resumesectiongap}
+\newlength{\resumecontentgap}
+\setlength{\resumesectiongap}{9pt}
+\setlength{\resumecontentgap}{5pt}
+
+\renewcommand{\cvsection}[1]{%
+  \par\addvspace{\resumesectiongap}%
+  \noindent\sectionstyle{#1}\phantomsection\hspace{4pt}%
+  {\color{gray}\vhrulefill{0.9pt}}\par\nobreak
+  \vspace{\resumecontentgap}%
 }
+\renewenvironment{cvparagraph}{\paragraphstyle\noindent}{\par}
+\renewenvironment{cvskills}{%
+  \setlength{\tabcolsep}{0pt}%
+  \noindent\begin{tabular*}{\textwidth}{@{}R{3.2cm}@{\hspace{8pt}}L{\textwidth-3.2cm-8pt}@{}}%
+}{\end{tabular*}\par}
+\renewenvironment{cventries}{%
+  \setlength{\parskip}{\resumecontentgap}%
+  \setlength{\parindent}{0pt}%
+}{\par}
+\patchcmd{\cventry}{\vspace{-2.0mm}}{}{}{}
+\setlist{topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=2pt}
+
 
 \name{Shenghan}{Gao}
 \position{Photonic Integrated Circuits{\enskip\cdotp\enskip}Photonics Hardware{\enskip\cdotp\enskip}Validation \& Test}
@@ -44,6 +56,7 @@
 \begin{document}
 
 \makecvheader[C]
+\setlength{\parskip}{0pt}
 
 \makecvfooter
   {\today}
