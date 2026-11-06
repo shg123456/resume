@@ -3,6 +3,7 @@
 \cvsection{Research and Industry Experience}
 \begin{cventries}
   \setlength{\parskip}{0pt}
+  \renewcommand*{\descriptionstyle}[1]{{\fontsize{9.5pt}{12pt}\bodyfontlight\upshape\color{text} #1}}
   \cventry
     {Research Assistant | Advisor: Nathan Youngblood}
     {University of Pittsburgh}
@@ -25,7 +26,7 @@
       \projectintro{Developed receiver-side DSP to recover communication waveforms distorted by intersymbol interference.}
       \begin{itemize}[leftmargin=2ex,topsep=2pt]
         \item Implemented FIR equalizers in MATLAB and Python; tuned filter coefficients using FFT analysis of measured signals.
-        \item Validated demodulated-signal recovery across test cases.
+        \item Compared filter responses on measured waveforms and validated demodulated-signal recovery across test cases.
       \end{itemize}
     }\projectentrygap
   \cventry
@@ -37,6 +38,7 @@
       \projectintro{Investigated liquid plasmas as terahertz sources by exciting liquids with ultrashort laser pulses.}
       \begin{itemize}[leftmargin=2ex,topsep=2pt]
         \item Generated THz signals and characterized how liquid temperature, polarity, and viscosity affected emission strength, bandwidth, and spectral content.
+        \item Analyzed time- and frequency-domain measurements to assess signal-to-noise ratio, sensitivity, and repeatability.
       \end{itemize}
     }\projectentrygap
   \cventry
@@ -48,6 +50,7 @@
       \projectintro{Designed optical systems for automotive LiDAR and compact mobile cameras.}
       \begin{itemize}[leftmargin=2ex,topsep=2pt]
         \item Optimized lens designs in CodeV/Zemax against optical performance, tolerance, and packaging requirements.
+        \item Worked with opto-mechanical engineers during lab integration, using alignment and test feedback to refine the optical systems.
       \end{itemize}
     }
 \end{cventries}
