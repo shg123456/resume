@@ -1,3 +1,4 @@
+\newcommand{\projectintro}[1]{#1\par}
 \cvsection{Research and Industry Experience}
 \begin{cventries}
   \cventry
@@ -6,11 +7,24 @@
     {Pittsburgh, PA}
     {Spring 2020 - Present}
     {
-      \begin{cvitems}
-        \item {\textbf{Coherent photonic computing:} Modeled and experimentally characterized optical injection locking, mapping injection-ratio and detuning ranges for carrier recovery.}
-        \item {\textbf{PIC design and integration:} Designed waveguides, couplers, and interferometers for chip-scale injection locking; supported e-beam fabrication, SEM inspection, and fiber-to-chip alignment.}
-        \item {\textbf{EO/RF validation:} Built coherent optical testbeds with balanced detection and PID phase feedback; automated instrument sweeps in Python/PyVISA and analyzed signals with FFT/DSP.}
-      \end{cvitems}
+      \projectintro{Developed a distributed photonic computing testbed that uses optical injection locking to recover a phase-coherent carrier at a remote node.}
+      \begin{itemize}[leftmargin=2ex,topsep=2pt,partopsep=0pt,parsep=0pt,itemsep=2pt]
+        \item Mapped injection-ratio and detuning ranges for stable carrier recovery; compared fiber-link measurements against calibrated laser models.
+        \item Designed PIC layouts with waveguides, couplers, and interferometers for chip-scale integration; supported e-beam fabrication, SEM inspection, and fiber-to-chip alignment.
+        \item Built a balanced-detection testbed with PID phase feedback; automated instrument sweeps in Python/PyVISA and characterized modulation transfer with FFT/DSP.
+      \end{itemize}
+    }
+  \cventry
+    {Research Intern | Mentor: Joe Wen}
+    {Lumentum Operations LLC}
+    {San Jose, CA}
+    {May 2023 - Aug 2023}
+    {
+      \projectintro{Developed receiver-side DSP to recover communication waveforms distorted by intersymbol interference.}
+      \begin{itemize}[leftmargin=2ex,topsep=2pt,partopsep=0pt,parsep=0pt,itemsep=2pt]
+        \item Implemented FIR equalizers in MATLAB and Python; tuned filter coefficients using FFT analysis of measured signals.
+        \item Validated demodulated-signal recovery across test cases.
+      \end{itemize}
     }
   \cventry
     {Research Assistant | Advisor: Xi-Cheng Zhang}
@@ -18,8 +32,20 @@
     {Rochester, NY}
     {Sep 2017 - Aug 2019}
     {
-      \begin{cvitems}
-        \item {\textbf{Liquid-plasma THz generation:} Investigated terahertz emission under ultrashort optical excitation; characterized how liquid temperature, polarity, and viscosity affected emission strength, bandwidth, and spectral content.}
-      \end{cvitems}
+      \projectintro{Investigated liquid plasmas as terahertz sources by exciting liquids with ultrashort laser pulses.}
+      \begin{itemize}[leftmargin=2ex,topsep=2pt,partopsep=0pt,parsep=0pt,itemsep=2pt]
+        \item Generated THz signals and characterized how liquid temperature, polarity, and viscosity affected emission strength, bandwidth, and spectral content.
+      \end{itemize}
+    }
+  \cventry
+    {Research Intern | Mentor: Chao Xu}
+    {Sunny Optics}
+    {Ningbo, China}
+    {May 2018 - Aug 2018}
+    {
+      \projectintro{Designed optical systems for automotive LiDAR and compact mobile cameras.}
+      \begin{itemize}[leftmargin=2ex,topsep=2pt,partopsep=0pt,parsep=0pt,itemsep=2pt]
+        \item Optimized lens designs in CodeV/Zemax against optical performance, tolerance, and packaging requirements.
+      \end{itemize}
     }
 \end{cventries}
