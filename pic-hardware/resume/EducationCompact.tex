@@ -1,32 +1,18 @@
 \cvsection{Education}
 \begingroup
-\patchcmd{\cventry}{\vspace{-2.0mm}}{\vspace{-5.0mm}}{}{}
-\vspace{3mm}
-\begin{cventries}
-  \cventry
-    {Ph.D. in Electrical and Computer Engineering}
-    {University of Pittsburgh}
-    {}
-    {Dec. 2026 (expected)}
-    {}
-  \cventry
-    {M.S. in Computer Science}
-    {Georgia Institute of Technology}
-    {}
-    {Dec. 2026 (expected)}
-    {}
-  \cventry
-    {M.S. in Optics}
-    {University of Rochester}
-    {}
-    {Aug. 2019}
-    {}
-  \cventry
-    {B.S. in Optical Engineering | B.S. in Applied Mathematics}
-    {University of Rochester}
-    {}
-    {Aug. 2017}
-    {}
-\end{cventries}
+\setlength{\tabcolsep}{0pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth-3.5cm} R{3.5cm}}
+  \entrytitlestyle{University of Pittsburgh}\enspace
+  \descriptionstyle{Ph.D. in Electrical and Computer Engineering} &
+  \entrydatestyle{Dec. 2026 (expected)} \\[2pt]
+  \entrytitlestyle{Georgia Institute of Technology}\enspace
+  \descriptionstyle{M.S. in Computer Science} &
+  \entrydatestyle{Dec. 2026 (expected)} \\[2pt]
+  \entrytitlestyle{University of Rochester}\enspace
+  \descriptionstyle{M.S. in Optics} &
+  \entrydatestyle{Aug. 2019} \\[2pt]
+  \entrytitlestyle{University of Rochester}\enspace
+  \descriptionstyle{B.S. in Optical Engineering | B.S. in Applied Mathematics} &
+  \entrydatestyle{Aug. 2017} \\
+\end{tabular*}
 \endgroup
-\vspace{-3mm}
